@@ -34,5 +34,6 @@ Hier sind einige der verwendeten Referenzen:
 - Creating horizontal scrolling containers the right way [CSS Grid] (by Dannie Vinther), https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585
 
 - Pure CSS Horizontal Website Tutorial for Beginners (by Red Stapler), https://www.youtube.com/watch?v=OeaHnxahf40
+- See Blog Entry here: https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/
 
 - MDN web docs: scroll-padding-inline, https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline
