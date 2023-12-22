@@ -1,3 +1,8 @@
+:root {
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
 // Tutorial von Kevin Powell mit Grid: https://www.youtube.com/watch?v=3yfswsnD2sw
 
 // 1. Horizontales Scrolling von individuellen Elementen innerhalb eines horizontal ausgerichteten Media Scrollers:
@@ -75,4 +80,59 @@ div.content {
   display: grid;
   grid-auto-flow: column;
   gap: var(--_spacer);
+}
+
+// ////////////////////////////////////////////////////////////////////
+
+// Double transform technique by Red Stapler
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  //   width muss gleich der totalen Breite des Contents sein (vier divs mit jeweils 100vw = 400vw)
+  //   nachdem alle anderen Schritte gemacht wurden, lassen wir den inneren wrapper final in die dem äußeren wrapper entgegengesetzte Richtung rotieren:
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  //   wir ergänzen zum Schluss noch translateX, um die Wrapper wieder sichtbar zu machen, da sie durch das Rotieren zunächst verschwinden
+}
+
+.one {
+  background-color: aqua;
+}
+
+.two {
+  background-color: rgb(226, 95, 226);
+}
+
+.three {
+  background-color: rgb(233, 235, 117);
+}
+
+.four {
+  background-color: rgb(224, 123, 83);
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  //   Trick! Man muss vw und vh genau umgekehrt zu width und height vergeben, da wir den outer wrapper im nächsten Schritt um 90deg drehen
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  //   wir ergänzen zum Schluss noch translateX, um die Wrapper wieder sichtbar zu machen, da sie durch das Rotieren zunächst verschwinden
+  //   Der y Scrollbalken wird durch "scroll" eingestellt und fungiert dann beim gedrehten outer wrapper als unser scrollbalken
+  overflow-y: scroll;
+  //   wir verstecken den Scrollbalken auf der x-Achse, da dieser horizontal läuft und durch das Rotieren aber keinen Sinn mehr ergeben wird
+  overflow-x: hidden;
+  position: absolute;
+}
+
+// Scrollbar verstecken
+::-webkit-scrollbar {
+  display: none;
 }
