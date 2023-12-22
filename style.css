@@ -2,7 +2,6 @@ div.scroll-wrapper {
   --_spacer: 1rem;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 26%;
   gap: var(--_spacer);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -11,16 +10,30 @@ div.scroll-wrapper {
 div.scroll-box {
   display: grid;
   gap: var(--_spacer);
-  height: 200px;
   background-color: rgb(221, 221, 248);
-  border: 1px solid;
   border-radius: 5px;
   padding: var(--_spacer);
 }
 
 div.content {
-  display: inline;
   background-color: palegoldenrod;
-  border: 1px solid;
   width: 100%;
+}
+
+.snapper {
+  scroll-snap-type: inline mandatory;
+}
+
+.snapper > * {
+  scroll-snap-align: start;
+}
+
+.group-scroller {
+  grid-auto-columns: 90%;
+}
+
+.group-content {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--_spacer);
 }/*# sourceMappingURL=style.css.map */

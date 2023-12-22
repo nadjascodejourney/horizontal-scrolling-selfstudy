@@ -27,10 +27,12 @@ Ich wende das Gelernte praktisch an, indem ich konkrete Beispiele code. Dabei we
 
 Hier sind einige der verwendeten Referenzen:
 
--Create a horizontal media scroller with CSS (by Kevin Powell), https://www.youtube.com/watch?v=3yfswsnD2sw
+- Create a horizontal media scroller with CSS (by Kevin Powell), https://www.youtube.com/watch?v=3yfswsnD2sw
 
 - Pure CSS Horizontal Scrolling (by Pieter Biesemans), https://css-tricks.com/pure-css-horizontal-scrolling/
 
 - Creating horizontal scrolling containers the right way [CSS Grid] (by Dannie Vinther), https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585
 
 - Pure CSS Horizontal Website Tutorial for Beginners (by Red Stapler), https://www.youtube.com/watch?v=OeaHnxahf40
+
+- MDN web docs: scroll-padding-inline, https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline

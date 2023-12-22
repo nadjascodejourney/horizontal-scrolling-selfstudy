@@ -11,7 +11,7 @@ div.scroll-wrapper {
   // damit Inhalte sich wie Spalten verhalten (similar to display flex)
   grid-auto-flow: column;
   //  clue mit grid im Vergleich zu flexbox: Alle auto-columns bekommen eine Größe (nicht wie template columns, wo man alle columns einzeln definieren muss!); sinnvoll, wenn man auch noch nicht weiß, wie viele Inhalte die jeweiligen children haben und bei template columns müsste man dann alle Größen nochmal einzeln anpassen; Welcher Wert ist sinnvoll? => keine geraden Teiler von 100, 23% statt 25% beispielsweise, weil der ganze viewport sonst automatisch so aufgeteilt wird, dass alle Platz haben und wir wollen in dem Fall ja overflow erzeugen!
-  grid-auto-columns: 26%;
+  //   grid-auto-columns: 26%;
   gap: var(--_spacer);
 
   // Scrolling auf wrapper anwenden, damit nicht ganze Seite scrollt
@@ -29,16 +29,50 @@ div.scroll-box {
   display: grid;
   // grid-template-rows: min-content;
   gap: var(--_spacer);
-  height: 200px;
+  //   height: 200px;
   background-color: rgb(221, 221, 248);
-  border: 1px solid;
+  //   border: 1px solid;
   border-radius: 5px;
   padding: var(--_spacer);
 }
 
 div.content {
-  display: inline;
+  //   display: inline;
   background-color: palegoldenrod;
-  border: 1px solid;
+  //   border: 1px solid;
   width: 100%;
+  //   width hier zb bei img inhalt sehr wichtig, damit img immer die ganze box (parent) einnehmen kann und alle bilder gleich groß sind
+}
+
+// Scroll Snapper (Achtung: kann etwas unterschiedlich wirken, je nach Browser)
+// 1. Schritt: auf das Elternelement folgendes anwenden:
+.snapper {
+  //inline  muss als erstes da stehen, "order matters"!
+  // inline, weil wir hier mit inline elementen arbeiten
+  scroll-snap-type: inline mandatory;
+  //   bisher passiert noch nichts, weil momentan noch nicht klar, wo genau gesnappt werden soll
+  //   3. Schritt: (mit Fallback 1rem)
+  //   https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline
+  //   scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+// 2. Schritt: alle direkten children des Elterncontainers ansprechen:
+.snapper > * {
+  scroll-snap-align: start;
+}
+
+// 2. GROUP ELEMENTS
+
+.group-scroller {
+  //   border: 2px solid hotpink;
+  //   damit eine gruppe die gesamte vp breite einnimmt:
+  grid-auto-columns: 90%;
+}
+
+.group-content {
+  //   border: 2px solid limegreen;
+  //   damit content innerhalb der Gruppe auch horizontal angeordnet wird
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--_spacer);
 }
