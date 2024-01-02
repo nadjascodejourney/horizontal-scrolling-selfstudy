@@ -6,12 +6,12 @@
 
 Dieses Lernprojekt hat das Ziel, das Erstellen von effektiven horizontalen Scrollseiten zu erlernen. Durch die Nutzung von Tutorials und umfassender Recherche im Internet erkunde ich verschiedene Techniken, um eine fundierte Grundlage im Bereich des horizontalen Scrollens zu schaffen.
 
-Ich habe mir dieses Thema selbst rausgesucht, da es im Rahmen meiner Weiterbildung beim DCI leider nicht vermittelt wurde, ich es aber aus folgenden Gründen sehr spannend finde:
+Ich finde dieses selbst gewählte Thema aus den folgenden Gründen sehr spannend:
 
 - kreativere Designoptionen: Möglichkeit, sich von traditionellen, vertikalen Layouts zu unterscheiden.
-- Storytelling und Fortschritt: Für narrative oder storybasierte Inhalte kann horizontales Scrollen verwendet werden, um einen kontinuierlichen Fortschritt durch die Handlung zu simulieren. Dies eignet sich besonders gut für Präsentationen, Bildergalerien oder interaktive Geschichten.
+- Storytelling: Für narrative oder storybasierte Inhalte kann horizontales Scrollen verwendet werden, um einen kontinuierlichen Fortschritt durch die Handlung zu simulieren. Dies eignet sich besonders gut für Präsentationen, Bildergalerien oder interaktive Geschichten.
 - Responsives Design für Mobile Geräte: Auf mobilen Geräten mit kleinen Bildschirmen kann horizontales Scrollen eine Lösung sein, breitere Inhalte darzustellen, ohne die Benutzerfreundlichkeit zu beeinträchtigen.
-- Experimentelles und Interaktives Design: weckt spielerische oder unkonventionelle Benutzererfahrung. Dies kann dazu beitragen, die Aufmerksamkeit der Besucher zu steigern.
+- Experimentelles und Interaktives Design: weckt spielerische oder unkonventionelle Benutzererfahrung. Das kann dazu beitragen, die Aufmerksamkeit der Besucher zu steigern.
 
 ## Herangehensweise
 
