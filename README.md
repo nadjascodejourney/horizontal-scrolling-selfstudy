@@ -1,4 +1,38 @@
-### Selfstudy/Selbststudium:
+# Horizontal Scrolling Learning Project (German explanation below)
+
+This learning project aims to master the creation of effective horizontal scrolling pages. By utilizing tutorials and extensive online research, I explore various techniques to build a solid foundation in horizontal scrolling.
+
+## Objective
+
+I find this self-chosen topic fascinating for the following reasons:
+
+- **Creative Design Options**: The ability to differentiate from traditional vertical layouts.
+- **Storytelling**: Horizontal scrolling can be used to simulate continuous progression through a narrative, making it suitable for presentations, image galleries, or interactive stories.
+- **Responsive Design for Mobile Devices**: On mobile devices with small screens, horizontal scrolling can be a solution to display wider content without compromising usability.
+- **Experimental and Interactive Design**: Encourages playful or unconventional user experiences, which can help capture visitor attention.
+
+## Approach
+
+### Tutorials and Guides
+
+The focus is on the practical exploration of various online tutorials that concentrate on creating horizontal scrolling pages. Initially, this will include the use of HTML and CSS, and later on, JavaScript for implementation.
+
+### Practical Implementation
+
+I apply what I have learned by coding concrete examples. Different techniques and styles discovered through research and tutorials will be tried out to develop a versatile understanding of horizontal scrolling page design. Additionally, various solutions will be tested to determine which is best suited for specific tasks and which I prefer.
+
+## References
+
+Here are some of the references used:
+
+- [Create a horizontal media scroller with CSS (by Kevin Powell)](https://www.youtube.com/watch?v=3yfswsnD2sw)
+- [Pure CSS Horizontal Scrolling (by Pieter Biesemans)](https://css-tricks.com/pure-css-horizontal-scrolling/)
+- [Creating horizontal scrolling containers the right way [CSS Grid] (by Dannie Vinther)](https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585)
+- [Pure CSS Horizontal Website Tutorial for Beginners (by Red Stapler)](https://www.youtube.com/watch?v=OeaHnxahf40)
+- [See Blog Entry here: Pure CSS Horizontal Scrolling Website Tutorial](https://redstapler.co/pure-css-horizontal-scrolling-website-tutorial/)
+- [MDN web docs: scroll-padding-inline](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-padding-inline)
+
+___________________________________________________________________________________________________________________
 
 # **Horizontales Scrollen**
 
